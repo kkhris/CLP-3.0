@@ -596,20 +596,30 @@ hr {
 
 .overlayicon1{
   position: absolute;
-  top: 72.80vw;
+  top: 72.71vw;
   bottom: 0;
-  left: 2vw;
+  left: 2.05vw;
   right: 0;
-  height: 28vw;
-  width: 28.24vw;
+  height: 27.9vw;
+  width: 28.15vw;
   opacity: 0;
   transition: .5s ease;
-  background-color:#ffffff75;
-  border-radius: 2.6vw;
+  background-color:rgba(255, 255, 255, 0.9);
+  border-radius: 2.9vw;
 }
 
 .acontainer6:hover .overlayicon1 {
   opacity:1;
+}
+
+.overlayicon1 p{
+	position: absolute;
+	color: #CF2528;
+	text-align: center;
+ 	letter-spacing: 0vw;
+ 	font-size: 3vw;
+ 	font-family:"Avenir Black";
+	margin:11vw 0vw 0vw 8.5vw;
 }
 
 .myself{
