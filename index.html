@@ -1,381 +1,238 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://webfonts.brand.ucsb.edu/webfont.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href= "newcss.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style type="text/css">
-    </style>
-    <title>Christal Lyu's portflio</title>
-  </head>
-  <body>
-    <!--Navigation-->
-	 
-<div class="sectiona" id="sectiona"> 
-    <nav class="nav">
-      <ul>
-        <li>
-          <a class="current" href= "index.html"><strong>WORKS</strong></a>
-        </li>
-        <li><a href= "About.html">ABOUT</a></li>
-        <li><a href="javascript:void(0)"  id="contact">CONTACT</a></li>
-        <!--	<div class="language"> 
-			<li><a href= "">日本語</a></li>
-			<li><a href= "">中文</a></li>
-	 	 </div> -->
-      </ul>
-    </nav>
-	  
-    <div class="line"></div>
-    <!--Header-->
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
+		<!-- Import style -->
+		<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+		<!-- Import Vue 3 -->
+		<script src="js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Import component library -->
+		<script src="//unpkg.com/element-plus"></script>
+	</head>
+	<body style="padding: 0 10%;overflow: inherit;">
+		<div id="app">
+			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header"
+				style="padding-top:2vw; font-family: 'Avenir Medium';">
+				<el-tab-pane label="WORKS" name="./index.html">
+				</el-tab-pane>
+				<el-tab-pane label="ABOUT" name="./about.html">
+				</el-tab-pane>
+				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
+			</el-tabs>
+			<div style="text-align: center;padding-right: 5%;">
+				<!-- 内容板块1 -->
+				<div style="padding-bottom: 10vw;">
+					<div><img src="./img/index/better small.gif" style="width: 30%;height:37.5vw;margin-top: -4vw;" />
+					</div>
+					<div
+						style="font-weight: 700;font-size: 2.2vw;margin-top: -7vw;font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+						HELLO! MY NAME IS CHRISTAL:)</div>
+					<div style="font-size: 1.2vw; line-height: 2.5vw;margin-top: 1vw;font-family: 'Avenir Light';">I am
+						a UX designer by day, portrait photographer at night.<br />
+						Based in Vancouver, British Columbia.
+					</div>
+					<!-- <div style="font-size: 1vw;margin-top: 0.5vw;">Based in Vancouver, British Columbia.</div> -->
+					<div style="margin-top: 2vw;">
+						<el-button style="cursor: pointer;" class="btn" onclick="toBottom()">Jump to my Projects</el-button>
+						<el-button style="cursor: pointer;" class="btn" @click="toPage('./photography.html')">Jump to my Photographs</el-button>
+					</div>
+				</div>
+				<!-- 内容板块2 -->
+				<div id="b2" style="padding-bottom: 10vw;" class="page_mark">
+					<div style="padding-top: 3vw;display: flex;align-items: center;">
+						<span
+							style="white-space: nowrap;margin-right: 3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">
+							CHRISTOPHER'S COLLECTIONS</span>
+						<el-divider>
+						</el-divider>
+					</div>
+					<div @click="toPage('./collection.html')"
+						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
+						class="tograyscaleParent">
+						<img src="./img/index/PJ1.JPG" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
+							class="tograyscale" />
+					</div>
+					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
+						<el-button class="btn1">Graphic Design</el-button>
+						<el-button class="btn1">Brand Design</el-button>
+					</div>
+					<div style="margin-top: 1.5vw;text-align: left;">
+						<span
+							style="font-size: 1vw;color: black;font-family:'Avenir Light';line-height: 3vw;font-size: 1.3vw;letter-spacing:0.05vw;">Personal
+							Branding Graphic Design Project for
+							Chrisopher Ho</span>
+						<a href="#b3"
+							style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳
+							NEXT
+							PROJECT</a>
+					</div>
+				</div>
+				<!-- 内容板块3 -->
+				<div id="b3" style="padding-bottom: 10vw;" class="page_mark">
+					<div style="padding-top: 3vw;display: flex;align-items: center;">
+						<span
+							style="white-space: nowrap;margin-right: 3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">
+							VERSION OF UBEREATS APP</span>
+						<el-divider>
+						</el-divider>
+					</div>
+					<div @click="toPage('./uber.html')"
+						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
+						class="tograyscaleParent">
+						<img src="./img/index/PJ2.png" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
+							class="tograyscale" />
+					</div>
+					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
+						<el-button class="btn1">User Experience Design</el-button>
+						<el-button class="btn1">User Research</el-button>
+						<el-button class="btn1">Design Thinking</el-button>
+					</div>
+					<div style="margin-top: 1.5vw;text-align: left;">
+						<span
+							style="font-size: 1vw;color: black;font-family:'Avenir Light';line-height: 3vw;font-size: 1.3vw;letter-spacing:0.05vw;">
+							An interactive prototype for UberEats APP</span>
+						<a href="#b4"
+							style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳
+							NEXT
+							PROJECT</a>
+					</div>
+				</div>
+				<!-- 内容板块4 -->
+				<div id="b4" style="padding-bottom: 10vw;" class="page_mark">
+					<div style="padding-top: 3vw;display: flex;align-items: center;">
+						<span
+							style="white-space: nowrap;margin-right: 3.5vw;font-weight: 600; font-family: 'Avenir Medium';font-size: 1.70vw; letter-spacing: 0.2vw;">
+							MOTION GRAPHIC PROJECT</span>
+						<el-divider>
+						</el-divider>
+					</div>
+					<div @click="toPage('./txp.html')"
+						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
+						class="tograyscaleParent">
+						<img src="./img/index/txp.jpg" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
+							class="tograyscale" />
+					</div>
+					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
+						<el-button class="btn1">Animation Design</el-button>
+						<el-button class="btn1">Graphic Design</el-button>
+					</div>
+					<div style="margin-top: 0.5vw;text-align: left;">
+						<span
+							style="font-size: 1vw;color: black;font-family:'Avenir Light';line-height: 3vw;font-size: 1.3vw;letter-spacing:0.05vw;">An
+							animation with a call to action related to Toxic
+							Positivity</span>
+						<a href="#foot"
+							style="font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↳
+							NEXT
+							PROJECT</a>
+					</div>
+				</div>
+				<!-- 底部 -->
+				<div style="text-align: left;margin-top: 6vw;margin-bottom: 5vw;" id="foot" class="page_mark">
+					<div
+						style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+						Let's Get In Touch!</div>
+					<div style="margin-top: 1vw;">
+						<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+							style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">LinkedIn↗</a>
+						<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+							style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">Email↗</a>
+					</div>
+					<div
+						style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">
+						© Coded and Designed by Christal Lyu,
+						Singapore 2022
+						<span href="" @click="scrollToTop"
+							style="text-decoration: underline;font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑
+							BACT TO TOP</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page"></div>
+		<script src="./js/page.js"></script>
+		<script>
+			const App = {
+				data() {
+					return {
+						activeName: "./index.html",
+						counter: 0
+					}
+				},
+				methods: {
+					handleClick(e) {
+						document.location.href = e.paneName
+					},
+					toPage(url) {
+						document.location.href = url
+					},
 
-    <img src="better small.gif" alt="me" class="icon" />
-	
-    <div class="homehead">
-      <h1><strong>HELLO! MY NAME IS CHRISTAL:)</strong></h1>
-      <h2>
-        I am a UX designer by day, portrait photographer at night.<br />
-        Based in Vancouver, British Columbia.
-      </h2>
-		
-      <div class="action_btn">
-        <button
-          name="works"
-          id="jumpTomyProject"
-          class="action_btn works"
-          value="Save"
-        >
-          Jump to my Projects
-        </button>
-        <a href= "Support/Portfolio.html">
-          <button
-            name="photographs"
-            class="action_btn photographs"
-            value="Cancel"
-            onclick="myFunction2()"
-          >
-            Jump to my Photographs
-          </button></a>
-      </div>	
-		
-    </div>
-	
-	<div class="action_btn1">
-        <button
-          name="works"
-          id="navigationup"
-          class="action_btn1 navigation"
-          value="Save"
-        >
-          ↑
-        </button>
-      </div>
-	
-		<div class="action_btn2">
-        <button
-          name="works"
-          id="navigationdown"
-          class="action_btn2 navigation"
-          value="Save"
-        >
-          ↓
-        </button>
-      </div>
-</div>
+					scrollToTop() {
+						const scrollTopHeight = 0;
+						document.documentElement.scrollTo({
+						  top: scrollTopHeight,
+						  behavior: "smooth", //  smooth(平滑滚动),instant(瞬间滚动),默认auto
+						});
+					}
+				},
+				mounted() {}
+			};
+			Vue.createApp(App).use(ElementPlus).mount('#app');
+		</script>
+		<style scoped>
+			.el-tabs__item.is-active {
+				color: rgb(72, 71, 71);
+				font-weight: 600;
+			}
 
-    <!--Image 1-->
-<div class="section1"> 
+			.el-tabs__active-bar {
+				background-color: rgb(72, 71, 71);
+			}
 
-<div class="controllera">
-    <div class="projecta" id="projecta">
-      <div class="page1">
-       <div class="line1"></div>
-        <h2>CHRISTOPHER'S COLLECTIONS</h2>
-      </div>
-		
+			.el-tabs__item:hover {
+				color: rgb(72, 71, 71);
+			}
 
-      <div class="project1">
-        <a href= "Support/Christopher's Collection.html">
-          <div class="containerp">
-            <img src="Support/PJ1.JPG" alt="Project 1" class="homeimgpro" />
-            <div class="overlayp"> </div>
-			  
-          </div>
-        </a>
+			.btn {
+				width: 18vw;
+				height: 0vw;
+				font-size: 1vw;
+				margin: 0vw 2vw;
+				padding: 2vw 0vw;
+				border-radius: 10px;
+			}
 
-        <div class="title">
-          <div class="titlebutton">
-            <button class="type2 button2">Graphic Design</button>
-            <button class="type2 button2">Brand Design</button>
-          </div>
-          <p>Personal Branding Graphic Design Project for Chrisopher Ho</p>
-        </div>
+			.btn1 {
+				width: 18vw;
+				height: 1vw;
+				font-size: 1vw;
+				margin: 0vw 1vw 0vw 0vw;
+				padding: 2vw 2vw;
+				border-radius: 10px;
+				background-color: #f7f5f4;
+			}
 
-        <div class="NextProject">
-          <a id="jumpToNext">↳ NEXT PROJECT</a>
-        </div>
-      </div>
-    </div>
-	
-		
-	<div class="action_btn3">
-        <button
-          name="works"
-          id="navigationup1"
-          class="action_btn1 navigation"
-          value="Save"
-        >
-          ↑
-        </button>
-      </div>
-	
-		<div class="action_btn4">
-        <button
-          name="works"
-          id="navigationdown1"
-          class="action_btn2 navigation"
-          value="Save"
-        >
-          ↓
-        </button>
-      </div>
-   </div>
-	
-	
-    <!--Project 1-->
-</div>
-	
-    <!--Image 2-->
-<div class="section1"> 
-    <div class="projectb" id="projectb">
-      <div class="page2">
-         <div class="line2"></div>
-        <h2>ENHANCE VERSION OF UBER EAT APP</h2>
-      </div>
+			.btn1~.el-button:focus,
+			.el-button:hover {
+				color: #747579;
+				border-color: #e4e7ec;
+				background-color: #f7f5f4;
+				outline: 0;
+				cursor: auto;
+			}
 
-      <div class="project2">
-        <a href= "Support/Uber 2.0.html">
-          <div class="containerp">
-            <img src="PJ2.png" alt="me" class="homeimgpro" />
-            <div class="overlayp"></div>
-          </div>
-        </a>
+			.tograyscaleParent:hover {
+				background: white;
+			}
 
-        <div class="title">
-          <div class="titlebutton">
-            <button class="type2 button2">User Experience Design</button>
-            <button class="type2 button2">User Research</button>
-            <button class="type2 button2">Design Thinking</button>
-          </div>
-          <p>Wireframe and Prototype of the Enhanced Version of Uber Eats</p>
-        </div>
-
-        <div class="NextProject">
-          <a id="jumpToFinal">↳ NEXT PROJECT</a>
-        </div>
-      </div>
-    </div>
-	<div class="action_btn5">
-        <button
-          name="works"
-          id="navigationup2"
-          class="action_btn1 navigation"
-          value="Save"
-        >
-          ↑
-        </button>
-      </div>
-	
-		<div class="action_btn6">
-        <button
-          name="works"
-          id="navigationdown2"
-          class="action_btn2 navigation"
-          value="Save"
-        >
-          ↓
-        </button>
-      </div>
-</div>
-    <!--Project 2-->
-
-<div class="section1"> 
-    <!--Image 3-->
-    <div class="projectc" id="projectc">
-      <div class="page3">
-		    <div class="line3"></div>
-        <h2>MOTION GRAPHIC PROJECT</h2>
-      </div>
-
-      <div class="project3">
-        <a href="Support/TXP.html">
-          <div class="containerp">
-            <img src="txp.jpg" alt="me" class="homeimgpro" />
-            <div class="overlayp"></div>
-          </div>
-        </a>
-
-        <div class="title">
-          <div class="titlebutton">
-            <button class="type2 button2">Animation Design</button>
-            <button class="type2 button2">Graphic Design</button>
-          </div>
-          <p>An animation with a call to action related to Toxic Positivity</p>
-        </div>
-		  
-      </div>
-    </div>
-	<div class="action_btn7">
-        <button
-          name="works"
-          id="navigationup3"
-          class="action_btn1 navigation"
-          value="Save"
-        >
-          ↑
-        </button>
-      </div>
-	
-		<div class="action_btn8">
-        <button
-          name="works"
-          id="navigationdown3"
-          class="action_btn2 navigation"
-          value="Save"
-        >
-          ↓
-        </button>
-      </div>
-</div>
-	  
-<div class="sectiond" id="sectiond">
-<div class="page4">
-	
-		<h2>Let's Get In Touch!</h2>
-			<!--Navigation-->
-		<nav class="navfooter">
-		  <ul>
-			<li> <a href="https://www.linkedin.com/in/lyuchristal" target="_blank">LinkedIn↗</a></li>
-			<li><a href= "mailto:y44lyu@uwaterloo.ca" target="_blank">Email↗</a></li>
-		  </ul>
-		</nav>
-	
-	<p1>© Coded and Designed by Christal Lyu, Singapore 2022</p1>
-	<div class="NextProjectf">
-          <a id="backToTop" href="">↑ BACT TO TOP</a>
-        </div>
-</div>
-</div>
-  </body>
+			.tograyscale:hover {
+				cursor: pointer;
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+		</style>
+	</body>
 </html>
-
-<script>
-  var buttonJump = document.querySelector("#jumpTomyProject");
-  var projecta = document.querySelector("#projecta");
-  buttonJump.addEventListener("click", () => {
-    projecta.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-    // window.scrollTo({top:1700,behavior: "smooth"});
-  });  
-	
-  var buttonJump = document.querySelector("#navigationdown");
-  var projecta = document.querySelector("#projecta");
-  buttonJump.addEventListener("click", () => {
-    projecta.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-    // window.scrollTo({top:1700,behavior: "smooth"});
-  });  
-	
-// window.scrollTo({top:1700,behavior: "smooth"});
-  let mybutton = document.getElementById("backToTop");
-  function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-// window.scrollTo({top:1700,behavior: "smooth"});
-
-  //var backToTop = document.querySelector("#backToTop");
-  //backToTop.addEventListener("click", () => {
-    //window.scrollTo({ top: 0, behavior: "smooth" });
-  //});
-
-  var jumpToNext = document.querySelector("#jumpToNext");
-  var projectb =  document.querySelector("#projectb");
-  jumpToNext.addEventListener("click", () => {
-    // window.scrollTo({top:3150,behavior: "smooth"});
-    projectb.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-  });
-	
-  var jumpToNext = document.querySelector("#navigationup1");
-  var sectiona =  document.querySelector("#sectiona");
-  navigationup1.addEventListener("click", () => {
-    // window.scrollTo({top:3150,behavior: "smooth"});
-    sectiona.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-  });  
-	
-var jumpToNext = document.querySelector("#navigationdown1");
-  var projectb =  document.querySelector("#projectb");
-  jumpToNext.addEventListener("click", () => {
-    // window.scrollTo({top:3150,behavior: "smooth"});
-    projectb.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-  });
-	
-var jumpToNext= document.querySelector("#navigationup2");
-  var projecta = document.querySelector("#projecta");
-  navigationup2.addEventListener("click", () => {
-    // window.scrollTo({top:4600,behavior: "smooth"});
-    projecta.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-
-  });
-	
- var jumpToNext= document.querySelector("#navigationdown2");
-  var projectc = document.querySelector("#projectc");
-  navigationdown2.addEventListener("click", () => {
-    // window.scrollTo({top:4600,behavior: "smooth"});
-    projectc.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-
-  }); 
-	
-var jumpToNext= document.querySelector("#navigationup3");
-  var projectb = document.querySelector("#projectb");
-  navigationup3.addEventListener("click", () => {
-    // window.scrollTo({top:4600,behavior: "smooth"});
-    projectb.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-
-  });
-	
- var jumpToNext= document.querySelector("#navigationdown3");
-  var sectiond = document.querySelector("#sectiond");
-  navigationdown3.addEventListener("click", () => {
-    // window.scrollTo({top:4600,behavior: "smooth"});
-    sectiond.scrollIntoView({behavior:"smooth", block: "end", inline: "nearest"})
-
-  }); 
-	
-  var jumpToNext= document.querySelector("#jumpToFinal");
-  var projectc = document.querySelector("#projectc");
-  jumpToFinal.addEventListener("click", () => {
-    // window.scrollTo({top:4600,behavior: "smooth"});
-    projectc.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-
-  }); 
-	
- var contact= document.querySelector("#contact");
-  var sectiond = document.querySelector("#sectiond");
-  contact.addEventListener("click", () => {
-    // window.scrollTo({top:4600,behavior: "smooth"});
-    sectiond.scrollIntoView({behavior:"smooth", block: "end", inline: "nearest"})
-  });
-</script>
-
