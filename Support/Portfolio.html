@@ -72,6 +72,50 @@
 </div>
 	
 </div>
+	
+<div class = "boxy">   
+	<div class = "picpnew">
+		<img src= "../ts2b.png" alt="Pic2" class="picnew">
+        <a href="#modalnew">
+            <div class="overlaynew">
+                <img src= "../ts2.png"  alt="Pic2" class="picnew">
+              </div>
+          </a>
+	</div>
+    
+     <div id="modalnew" class="modal">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			 <img src= "../tsshuba.jpg"  alt="Pic1" class="tspic2">
+		</div>
+		
+		<div class="picpopup">
+		<a href="" onclick="window.open('https://www.magcloud.com/browse/issue/2228366?__r=929479')"><p>Shuba Magazine <br> ISSUE 58 VOL. 5</p> </a>
+        </div>
+		
+		<a href="#modal">
+		<div class="Nextcontainer">
+			<img src= "../small-arrow-icon-2.png" alt="Pic1" class="arrowpreviouslast">
+      		<div class="overlayprevious">
+                <img src= "../small-arrow-icon-2.png" alt="Pic1" class="arrowpreviouslastoverlay">
+              </div>
+        </div>
+		</a>
+		
+		<a href="#modal3">
+		<div class="Nextcontainer2">
+			 <img src= "../small-arrow-icon-1.jpg"  alt="Pic1" class="arrownext">
+			<div class="overlaynext">
+                 <img src= "../small-arrow-icon-1.jpg"  alt="Pic1" class="arrownextoverlay">
+              </div>
+        </div>
+		</a>
+		
+	</div>
+</div>
+</div>	
+	
     
 <div class = "boxy">   
 	<div class = "picp102">
@@ -296,21 +340,16 @@ revealing their unique personalities though photographs.  </p2>
 </div>
 	
 	
+<div class = "container9">
+		<img src= "../okblack.png" alt="c5" class="c3">
+        <a href="#modalgrad1">
+             <div class="overlaygrad">
+                <img src= "../colorgrad@2x.png"  alt="Pic1" class="c3">
+              </div>
+         </a>
+	</div>
 	
-<div class = "container9"> 
-	<div class = "picgrad1">
-		<img src= "../grad3black.png" alt="c5" class="c3">
-		
-		<a href="#modalgrad1">
-			
-	    <div class="overlaygrad">
-             <img src= "../grad3.JPG" alt="c5" class="c3grad"> 
-			<img src= "../grad1.1.png" alt="c5" class="c4grad"> 
-			<img src= "../grad2.2.png" alt="c5" class="c5grad">
-         </div>
-			
-		 </a>
-		
+
 		
 	<div id="modalgrad1" class="modalgrad">
 	<div class="popup1">
@@ -343,7 +382,7 @@ revealing their unique personalities though photographs.  </p2>
 	<div class="popup1">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="../grad1.JPG"  alt="Pic1" class="gradpic3">
+			<img src="../grad1.JPG"  alt="Pic1" class="gradpif">
 			<img src= "../gradsingle.JPG"  alt="Pic1" class="gradpic4">
 		</div>
 		
@@ -398,18 +437,6 @@ revealing their unique personalities though photographs.  </p2>
 		
 	</div>
 	</div>
-	</div>
-	</div>
-	
-
-			
-<div class = "container10"> 
-		<img src= "../grad1black.png" alt="c5" class="c3">
-	</div>
-<div class = "container11"> 
-		<img src= "../grad2black.png" alt="c5" class="c3">
-	</div>	
-</div>
 </div>
 	
 <div class="action_btn5">
@@ -451,7 +478,8 @@ revealing their unique personalities though photographs.  </p2>
           <a id="backToTop" href="">↑ BACT TO TOP</a>
         </div>
 </div>
-</div>
+	</div>	
+	</div>	
 	
 </body>
 </html>
@@ -470,7 +498,7 @@ var navigationdown3= document.querySelector("#navigationdown");
   var fsl = document.querySelector("#fsl");
   navigationdown1.addEventListener("click", () => {
     // window.scrollTo({top:4600,behavior: "smooth"});
-    fsl.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
+    fsl.scrollIntoView({behavior:"smooth", block: "start", inline: "nearest"})
   });  
 	
   var navigationup2= document.querySelector("#navigationup2");
@@ -499,5 +527,13 @@ var navigationdown3= document.querySelector("#navigationdown");
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+document.querySelector('.popup').style.top = '50%';
+document.querySelector('.popup').style.left = '50%';
+document.querySelector('.popup').style.transform = 'translate(-50%, -50%)';
+	
+console.log(document.querySelector('.popup').style.top);
+console.log(document.querySelector('.popup').style.left);
+
 	
 </script>	
