@@ -1,243 +1,261 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://webfonts.brand.ucsb.edu/webfont.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href= "newcss.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-<style type="text/css">
-</style>
-<title>About</title>
-</head>
-<body>	
-
- <div class="ON">
-	 
-<div class="sectionc" id = "sectionc">
-	 
-<!--Navigation-->
-<nav class="nav">
-  <ul>
-	<li><a href= "index.html">WORKS</a></li>
-	<li><a class = "current" href= "ABOUT.html"><strong>ABOUT</strong></a></li>
-	<li><a href="javascript:void(0)"  id="contact">CONTACT</a></li>
-	<!--	<div class="language"> 
-			<li><a href= "">日本語</a></li>
-			<li><a href= "">中文</a></li>
-	 	 </div> -->
-  </ul>
-</nav>
-	
-<div class="line"></div>
-	
-<div class="aboutpage">
-	
-	<div class="acontainer1">
-		<h1> About Me</h1>
-	</div>
-	
-		<a href="" onclick="window.open('CHRISTAL LYU RESUME 2022.pdf')">  <button class="buttonc buttonc"> View my Resume </button> </a>
-
-	<div class="acontainer2">
-		<img src= "IMG_2650.JPG" alt="me" class="myself">
-	</div>
-	
-	<div class="acontainer3">
-		<h1><strong>Hello Again!</strong></h1>
-		<p>My name is Christal:)</p>
-		<p1>Fun facts about me: </p1>
-		<p2>1. I lived in five cities in the pass 5 years  <br><br> 2. Fluent in 3 languages and currently learning a new one  <br><br> 3. Tried 6 new things in the pass 4 months</p2>
-		<a href="" onclick="window.open('https://www.notion.so/Story-of-my-Life-b5cb36db93774415873f2f5e2f47709c')"> <p3> Click to view more </p3> </a>
-	</div>	
-	
-	<div class="action_btn9">
-        <button
-          name="works"
-          id="navigationupa"
-          class="action_btn1 navigation"
-          value="Save"
-        >
-          ↑
-        </button>
-      </div>
-	
-		<div class="action_btn10">
-        <button
-          name="works"
-          id="navigationdowna"
-          class="action_btn2 navigation"
-          value="Save"
-        >
-          ↓
-        </button>
-      </div>
-</div>	
-</div>	
-
-<div class="sectionb" id="sectionb">
-	
-	<div class="acontainer4">
-		<h1><strong>Life Sharing Blogs… </strong></h1>
-	</div>
-	
-	<div class="acontainer5">
-	
-	<div class="acontainergrid"> 
-			
-		<a href="https://www.notion.so/Life-in-Singapore-be-like-dc92a1dba36d45399cfd8741c4ea8a07" target="_blank">
-	
-			<div class="acontainer6">
-				<img src= "icon1p.png" alt="icon1" class="icon1">
-				<div class="overlayicon1">
-                 <img src= "icon1.png" alt="icon1" class="icon1">
-              </div>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- Font -->
+		<link rel="stylesheet" href="https://use.typekit.net/hnl4mxr.css">
+		<!-- Import style -->
+		<link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+		<!-- Import Vue 3 -->
+		<script src="js/v3.2.8/vue.global.prod.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Import component library -->
+		<script src="//unpkg.com/element-plus"></script>
+	</head>
+	<body style="padding: 0% 10%;overflow: inherit;">
+		<div id="app">
+			<el-tabs v-model="activeName" class="demo-tabs page_mark" @tab-click="handleClick" id="header"
+				style="padding-top:2vw; font-family: 'Avenir Medium';">
+				<el-tab-pane label="WORKS" name="./index.html">
+				</el-tab-pane>
+				<el-tab-pane label="ABOUT" name="./About.html">
+				</el-tab-pane>
+				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
+			</el-tabs>
+			<div>
+				<div>
+					<div
+						style="font-weight: 700;font-size: 2.2vw;margin-top: 19vw;margin-left: 0.2vw;font-family: futura-pt, sans-serif; letter-spacing: 0.1vw;">
+						About Me</div>
+					<div>
+						<div
+							style="margin-left: 0.2vw; font-size: 1.4vw; margin-top:0.6vw; font-family: 'Avenir Light'; letter-spacing: 0.1vw;">
+							<a href="" onclick="window.open('img/about/CHRISTAL LYU RESUME 2023.pdf')"> View my Resume ↗
+							</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<img src="./img/about/IMG_2650.JPG"
+						style="margin-top: -20vw; margin-left: 18vw; width: 35%;border: 1px solid #e4e7ed;border-radius: 8px;"
+						class="tograyscale" />
+				</div>
+				<div>
+					<div
+						style="font-weight: 700;font-size: 2.2vw; margin-top: -31vw;margin-left: 50vw;font-family: futura-pt, sans-serif; letter-spacing: 0.1vw;">
+						Hello Again!</div>
+					<div
+						style="font-weight: 700;font-size: 2.2vw; margin-top: 0.5vw;margin-left: 50vw;font-family: Avenir Light;">
+						My name is Christal:)</div>
+					<div
+						style="font-weight: 700;font-size: 2vw; margin-top: 7.5vw;margin-left: 50vw;font-family: Avenir Light;">
+						Fun facts about me: </div>
+					<div
+						style="font-weight: 700;font-size: 1.3vw; margin-top: 1vw;margin-left: 50vw;font-family: Avenir Light;">
+						1. Lived in 5 different cities in the past 5 years </div>
+					<div
+						style="font-weight: 700;font-size: 1.3vw; margin-top: 1vw;margin-left: 50vw;font-family: Avenir Light;">
+						2. Multilingual, currently learning Japanese </div>
+					<div
+						style="font-weight: 700;font-size: 1.3vw; margin-top: 1vw;margin-left: 50vw;font-family: Avenir Light;">
+						3. This is my 5th time designing this website </div>
+					<div
+						style="font-weight: 700;font-size: 1.3vw; margin-top: 1vw;margin-left: 50vw;font-family: Avenir Light;">
+						<a href=""
+							onclick="window.open('https://www.notion.so/Story-of-my-Life-b5cb36db93774415873f2f5e2f47709c')">
+							<p3> Click to view more </p3>
+						</a>
+					</div>
+				</div>
 			</div>
-			
-		</a>	
-			
-		<a href="https://www.notion.so/Life-as-a-3D-Modelling-Beginner-eb4c8772640041c8a796ebe7535cf53b" target="_blank">
-			<div class="acontainer7">
-				<img src= "iconh2.png" alt="icon2" class="icon2">
-				
-				<div class="overlayicon2">
-                 <img src= "icon2.png" alt="icon2" class="icon2">
-              </div>
+
+			<!-- Articles -->
+			<div id="articles" class="page_mark">
+				<div
+					style="padding-top:5vw; font-weight: 600; margin-top:14vw; font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
+					Life Sharing Blogs...</div>
+				<div style="display: flex;" id="a1">
+
+					
+					<div style="position: relative;" id="iconimg1" @click="toWord('https://sage-rook-c0d.notion.site/Life-in-Singapore-be-like-dc92a1dba36d45399cfd8741c4ea8a07')">
+
+						<img src="img/about/icon1p.png"
+							style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px; margin-top:3vw; margin-right: 3vw; "
+							class="tograyscale" />
+						 <img id="iconimg1Hover" src="img/about/icon1.png"
+							style="position: absolute;top: 0;width: 100%;border: 1px solid #e4e7ed;border-radius: 8px; margin-top:3vw; margin-right: 3vw; left: 0"
+							class="tograyscale" /></a>
+					</div>
+					<div style="position: relative;margin: 0vw 4vw;" id="iconimg2" @click="toWord('https://sage-rook-c0d.notion.site/Life-as-a-3D-Modelling-Beginner-eb4c8772640041c8a796ebe7535cf53b')">
+						<img src="img/about/iconh2.png"
+							style="width: 100%;margin-left:0vw;border: 1px solid #e4e7ed;border-radius: 8px; margin-top:3vw;  margin-right: 3vw; "
+							class="tograyscale" />
+						<img id="iconimg2Hover" src="img/about/icon2.png"
+							style="position: absolute;top: 0;width: 100%;border: 1px solid #e4e7ed;border-radius: 8px; margin-top:3vw; margin-right: 3vw; left: 0"
+							class="tograyscale" />
+					</div>
+					<div style="position: relative;" id="iconimg3" @click="toWord('https://www.notion.so/Story-of-my-Life-b5cb36db93774415873f2f5e2f47709c')">
+						<img src="img/about/iconh3.png"
+							style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px; margin-top:3vw;"
+							class="tograyscale" />
+						<img id="iconimg3Hover" src="img/about/icon3.png"
+							style="position: absolute;top: 0;width: 100%;border: 1px solid #e4e7ed;border-radius: 8px; margin-top:3vw; margin-right: 3vw; left: 0"
+							class="tograyscale" />
+					</div>
+
+
+				</div>
+
+				<div id="text">
+
+					<div style="display: inline-block" id="t1">
+						<div
+							style="font-weight: 700;font-size: 1.5vw; margin-top:2vw; font-family: futura-pt, sans-serif; margin-right: 5.2vw;">
+							Singapore Exchange Life</div>
+						<div
+							style="font-weight: 700;font-size: 1.3vw; margin-top:1vw; font-family: Avenir Light;margin-right: 5.2vw;">
+							Living in a tropical country be like… </div>
+					</div>
+
+					<div style="display: inline-block" id="t2">
+						<div
+							style="font-weight: 700;font-size: 1.5vw; margin-top:2vw; font-family: futura-pt, sans-serif;margin-right: 5.2vw;">
+							Life as a 3D modelling beginner</div>
+						<div
+							style="font-weight: 700;font-size: 1.3vw; margin-top:1vw; font-family: Avenir Light;margin-right: 5.2vw;">
+							Just me learning Maya and Rhino </div>
+					</div>
+
+					<div style="display: inline-block" id="t3">
+						<div
+							style="font-weight: 700;font-size: 1.5vw; margin-top:2vw; font-family: futura-pt, sans-serif;">
+							Story of my life?</div>
+						<div style="font-weight: 700;font-size: 1.3vw; margin-top:1vw; font-family: Avenir Light;">Just
+							me exploring the world </div>
+					</div>
+				</div>
+
 			</div>
-		</a>	
-		
-		<a href="https://sage-rook-c0d.notion.site/Story-of-my-Life-b5cb36db93774415873f2f5e2f47709c" target="_blank">
-			<div class="acontainer8">
-				<img src= "iconh3.png" alt="icon3" class="icon3"> 
-				
-				<div class="overlayicon3">
-                 <img src= "icon3.png" alt="icon3" class="icon3"> 
-              </div>
+
+			<!-- 底部 -->
+			<div style="text-align: left;margin-top: 6vw;margin-bottom: 5vw;" id="foot" class="page_mark">
+				<div
+					style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw; margin-top: 14vw;">
+					Let's Get In Touch!</div>
+				<div style="margin-top: 1vw;">
+					<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">LinkedIn↗</a>
+					<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+						style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">Email↗</a>
+				</div>
+				<div
+					style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">
+					© Coded and Designed by Christal Lyu,
+					Singapore 2022
+					<span  @click="scrollToTop"
+						style="text-decoration: underline;font-size: 1vw;color:black;font-family:'Avenir Light'; font-size: 1.3vw;letter-spacing:0.05vw; margin-top:0.5vw; float: right;cursor: pointer;">↑
+						BACT TO TOP</span>
+				</div>
 			</div>
-		</a>
-		
 		</div>
-		
-		
-	</div>
-	
-	<div class="acontainertext">
-	
-	<div class="acontainertextgrid"> 
-			
-			<div class="acontainert1">
-				<p>Singapore Exchange Life</p>
-				<p1>Living in a tropical country be like… </p1>
-			</div>
-			
-			<div class="acontainert2">
-				<p>Life as a 3D modelling beginner</p>
-				<p1>Just me learning Maya and Rhino</p1>
-			</div>
-		
-			<div class="acontainert3">
-				<p>Story of my life?</p>
-				<p1>Just me exploring the world</p1>
-			</div>
-		
-		</div>
-	</div>
-	
-		<div class="action_btn11">
-        <button
-          name="works"
-          id="navigationupb"
-          class="action_btn1 navigation"
-          value="Save"
-        >
-          ↑
-        </button>
-      </div>
-	
-		<div class="action_btn12">
-        <button
-          name="works"
-          id="navigationdownb"
-          class="action_btn2 navigation"
-          value="Save"
-        >
-          ↓
-        </button>
-      </div>
-	
-</div>
-	
-<div class="sectiond" id="sectiond">
-<div class="page4">
-	
-		<h2>Let's Get In Touch!</h2>
-			<!--Navigation-->
-		<nav class="navfooter">
-		  <ul>
-			<li> <a href="https://www.linkedin.com/in/lyuchristal" target="_blank">LinkedIn↗</a></li>
-			<li><a href= "mailto:y44lyu@uwaterloo.ca" target="_blank">Email↗</a></li>
-		  </ul>
-		</nav>
-	
-	<p1>© Coded and Designed by Christal Lyu, Singapore 2022</p1>
-	<div class="NextProjectf">
-          <a id="backToTop" href="">↑ BACT TO TOP</a>
-        </div>
-</div>
-</div>
-</div>
-	 
-</body>
+		<div id="page"></div>
+		<script src="./js/page.js"></script>
+		<script>
+			const App = {
+				data() {
+					return {
+						activeName: "./About.html",
+						counter: 0
+					}
+				},
+				methods: {
+					handleClick(e) {
+						document.location.href = e.paneName
+					},
+					scrollToTop() {
+						const scrollTopHeight = 0;
+						document.documentElement.scrollTo({
+						  top: scrollTopHeight,
+						  behavior: "smooth", //  smooth(平滑滚动),instant(瞬间滚动),默认auto
+						});
+					},
+					toWord(url){
+						window.open(url)
+					}
+				},
+			};
+			Vue.createApp(App).use(ElementPlus).mount('#app');
+		</script>
+		<style scoped>
+			.el-tabs__item.is-active {
+				color: rgb(72, 71, 71);
+				font-weight: 600;
+			}
+
+			.el-tabs__active-bar {
+				background-color:rgb(72, 71, 71);
+			}
+
+			.el-tabs__item:hover{
+				color: rgb(72, 71, 71);
+			}
+
+			.btn {
+				width: 15vw;
+				height: 1vw;
+				font-size: 1vw;
+				margin: 0vw 2vw;
+				padding: 1.5vw 0vw;
+				border-radius: 10px;
+				margin: 1vw 0vw 0vw 0vw;
+			}
+
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
+			}
+
+			#iconimg1Hover {
+				display: none;
+			}
+
+			#iconimg1:hover {
+				cursor: pointer;
+			}
+
+			#iconimg1:hover>#iconimg1Hover {
+				display: block;
+
+			}
+
+			#iconimg2Hover {
+				display: none;
+			}
+
+			#iconimg2:hover {
+				cursor: pointer;
+			}
+
+			#iconimg2:hover>#iconimg2Hover {
+				display: block;
+
+			}
+
+			#iconimg3Hover {
+				display: none;
+			}
+
+			#iconimg3:hover {
+				cursor: pointer;
+			}
+
+			#iconimg3:hover>#iconimg3Hover {
+				display: block;
+
+			}
+		</style>
+	</body>
 </html>
-<script src="script.js"></script>
-<script>
-  var buttonJump = document.querySelector("#navigationdowna");
-  var sectionb = document.querySelector("#sectionb");
-  navigationdowna.addEventListener("click", () => {
-    sectionb.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-    // window.scrollTo({top:1700,behavior: "smooth"});
-  });
-	
-// window.scrollTo({top:1700,behavior: "smooth"});
-  let mybutton = document.getElementById("backToTop");
-  function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-// window.scrollTo({top:1700,behavior: "smooth"});
-
-  //var backToTop = document.querySelector("#backToTop");
-  //backToTop.addEventListener("click", () => {
-    //window.scrollTo({ top: 0, behavior: "smooth" });
-  //});
-
-  var jumpToNext = document.querySelector("#navigationdownb");
-  var sectiond =  document.querySelector("#sectiond");
-  navigationdownb.addEventListener("click", () => {
-    // window.scrollTo({top:3150,behavior: "smooth"});
-    sectiond.scrollIntoView({behavior:"smooth", block: "end", inline: "nearest"})
-  });
-  var jumpToFinal= document.querySelector("#navigationupb");
-  var sectionc = document.querySelector("#sectionc");
-  navigationupb.addEventListener("click", () => {
-    // window.scrollTo({top:4600,behavior: "smooth"});
-    sectionc.scrollIntoView({behavior:"smooth", block: "center", inline: "nearest"})
-
-  });
-	
-    var contact= document.querySelector("#contact");
-  var sectiond = document.querySelector("#sectiond");
-  contact.addEventListener("click", () => {
-    // window.scrollTo({top:4600,behavior: "smooth"});
-    sectiond.scrollIntoView({behavior:"smooth", block: "end", inline: "nearest"})
-  });
-</script>
-
-
-  

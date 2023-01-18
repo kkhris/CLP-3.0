@@ -18,7 +18,7 @@
 				style="padding-top:2vw; font-family: 'Avenir Medium';">
 				<el-tab-pane label="WORKS" name="./index.html">
 				</el-tab-pane>
-				<el-tab-pane label="ABOUT" name="./about.html">
+				<el-tab-pane label="ABOUT" name="./About.html">
 				</el-tab-pane>
 				<el-tab-pane id="contact" label="CONTACT" name="#foot"></el-tab-pane>
 			</el-tabs>
@@ -52,8 +52,10 @@
 					<div @click="toPage('./collection.html')"
 						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
 						class="tograyscaleParent">
+
+            <a href="Support/Christopher's Collection.html">
 						<img src="./img/index/PJ1.JPG" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
-							class="tograyscale" />
+							class="tograyscale" /> </a>
 					</div>
 					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
 						<el-button class="btn1">Graphic Design</el-button>
@@ -70,6 +72,7 @@
 							PROJECT</a>
 					</div>
 				</div>
+        
 				<!-- 内容板块3 -->
 				<div id="b3" style="padding-bottom: 10vw;" class="page_mark">
 					<div style="padding-top: 3vw;display: flex;align-items: center;">
@@ -79,11 +82,12 @@
 						<el-divider>
 						</el-divider>
 					</div>
-					<div @click="toPage('./uber.html')"
+					<div 
 						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
 						class="tograyscaleParent">
+            <a href="Support/Uber 2.0.html">
 						<img src="./img/index/PJ2.png" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
-							class="tograyscale" />
+							class="tograyscale" /> </a>
 					</div>
 					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
 						<el-button class="btn1">User Experience Design</el-button>
@@ -109,11 +113,13 @@
 						<el-divider>
 						</el-divider>
 					</div>
-					<div @click="toPage('./txp.html')"
+					<div
 						style="width: 100%;height: auto;border-radius: 8px;padding-right: 0.223%;margin: 5vw 0vw;"
 						class="tograyscaleParent">
+
+            <a href="Support/TXP.html">
 						<img src="./img/index/txp.jpg" style="width: 100%;border: 1px solid #e4e7ed;border-radius: 8px;"
-							class="tograyscale" />
+							class="tograyscale" /> </a>
 					</div>
 					<div style="margin-top: -2vw;text-align: left;font-family:'Avenir Light';">
 						<el-button class="btn1">Animation Design</el-button>
@@ -135,12 +141,12 @@
 					<div
 						style="font-weight: 600;font-size: 2.55vw; font-family: futura-pt, sans-serif; letter-spacing: 0.2vw;">
 						Let's Get In Touch!</div>
-					<div style="margin-top: 1vw;">
-						<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
-							style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">LinkedIn↗</a>
-						<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
-							style="margin-right: 5vw;font-size: 1.6vw; color: #939393; font-family: 'Avenir Medium';">Email↗</a>
-					</div>
+						<div style="margin-top: 1vw;">
+							<a href="https://www.linkedin.com/in/lyuchristal" target="_blank"
+								style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">LinkedIn↗</a>
+							<a href="mailto:y44lyu@uwaterloo.ca" target="_blank"
+								style="margin-right: 5vw;font-size: 1.6vw;  font-family: 'Avenir Medium';">Email↗</a>
+						</div>
 					<div
 						style="margin-top: 1vw;font-size: 1.2vw; letter-spacing: 0.05vw; color: #353535; font-family:'Avenir Light'">
 						© Coded and Designed by Christal Lyu,
@@ -194,6 +200,14 @@
 
 			.el-tabs__item:hover {
 				color: rgb(72, 71, 71);
+			}
+
+			a {
+				color: #939393;
+			}
+
+			a:hover {
+				color: #353535;
 			}
 
 			.btn {
